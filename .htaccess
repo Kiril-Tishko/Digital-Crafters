@@ -111,14 +111,3 @@ AddType application/octet-stream .doc .mov .avi .pdf .xls
     ExpiresByType application/javascript "access plus 604800 seconds"
     ExpiresByType application/x-javascript "access plus 604800 seconds"
 </ifModule>
-
-<IfModule deflate_module>
-	<IfModule filter_module>
-		AddOutputFilterByType DEFLATE text/plain text/html
-		AddOutputFilterByType DEFLATE text/xml application/xml application/xhtml+xml application/xml-dtd
-		AddOutputFilterByType DEFLATE application/rdf+xml application/rss+xml application/atom+xml image/svg+xml
-		AddOutputFilterByType DEFLATE text/css text/javascript application/javascript application/x-javascript
-		AddOutputFilterByType DEFLATE font/otf font/opentype application/font-otf application/x-font-otf
-		AddOutputFilterByType DEFLATE font/ttf font/truetype application/font-ttf application/x-font-ttf
-	</IfModule>
-</IfModule>
